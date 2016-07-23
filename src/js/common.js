@@ -12,6 +12,11 @@
 				
 				
 			});
+			//点击后改变头部显示的地名
+			$('#boxcity a').on('click',function(e){
+				e.preventDefault;
+				$('.head-left div').html($(this).text());
+			})
 			//果园开关
 			$('.head-left,#boxcity').hover(function(){
 				$('#boxcity').show();
@@ -25,6 +30,53 @@
 				$(this).find('div').hide();
 			
 			});
+			//首页轮播图
+			var index=0;
+			var timer;
+			show();
+			var timer=setInterval(function(){
+				show();
+				index++;
+			},3000);
+			function show(){
+				if(index==6){
+					index=0;
+				};
+				$('#indexbanner .lunboul').animate({left:-320-index*1920});
+				$('#indexbanner .slidebtn li').removeClass('active');
+				$('#indexbanner .slidebtn li').eq(index).toggleClass('active');
+			}
+			$('#indexbanner').hover(function(){
+				clearInterval(timer)
+			},function(){
+				timer=setInterval(function(){
+				show();
+				index++;
+				},3000);
+			});
+			$('#indexbanner .slidebtn').on('click','li',function(){
+				index=$(this).index();
+				show();
+			});
+			$('.fruit-tui dl img').not('bigimg').hover(function(){
+				$(this).stop().animate({width:270,height:270,left:-11,top:-11});
+			},function(){
+				$(this).stop().animate({width:248,height:248,left:0,top:0});
+			});
+			$('.fruit-tui dl .bigimg').hover(function(){
+				$(this).stop().animate({width:270,height:630,left:-11,top:-15});
+			},function(){
+				$(this).stop().animate({width:248,height:610,left:0,top:0});
+			});
+			$('.fruit-tui dd').on('click','.click-buycar',function(){
+				$('#buycar').show();
+				$('.overlay').show().animate({opacity:0.5})
+			});
+			$('#buycar .shop-top img').on('click',function(){
+				$('#buycar').hide();
+				$('.overlay').animate({opacity:0}).hide();
+			})
+
 			
 
 		})

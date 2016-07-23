@@ -9,8 +9,8 @@ img{border:0;}
 .head{width:100%;background:#eeeeee;}
 .headcon{width:1280px ;margin: 0 auto; color: #999;height:30px ;position: relative;}
 .head .head-left{width:81px ;height:30px ;float: left;text-align: center;line-height: 30px;}
-.head .head-left i{position: absolute;left: 10px;top:2px;display: block; }
-.head .head-left b{position: absolute;left: 59px;top:0px; display: block;}
+.head .head-left i{position: absolute;left: 10px;top:10px;display: block; }
+.head .head-left b{position: absolute;left: 59px;top:12px; display: block;}
 .head .head-left:hover{background: #fff}
 .head h4{float: right;line-height: 30px;font-weight: 800;background: url(../img/kefu.jpg) no-repeat left center;padding-left: 16px;}
 .head .headnav{float: right;margin-right: 16px; }
@@ -26,7 +26,7 @@ img{border:0;}
 .head .headnav .hideli .shoujihide dt{float: left;}
 .head .headnav li {float: left;background: url(../img/libg.jpg) right center no-repeat;padding: 0 13px;line-height: 30px; }
 .head .headnav li a{color: #999;}
-.head .headnav li a:hover{text-decoration:underline;color: orange}
+.head .headnav li a:hover{text-decoration:underline;color: orange;float: left;}
 .head .headnav li img{float: left;margin-right:5px;margin-top: 8px }
 .head .hideli:hover{background: #fff}
 .head #boxcity{display: none; position: absolute;top: 30px;left: 0;width: 295px;height: 380px;padding: 10px;background: #fff;box-shadow: 0 10px 15px rgba(175,175,175,0.75);z-index: 10;overflow: auto;}
@@ -45,3 +45,53 @@ img{border:0;}
 .nav{width:100%;background:#fff;}
 .navcon{width:1280px ;margin: 0 auto;height:120px ;}
 .navcon h2{padding: 23px 0 0 3px;float: left;margin-right: 48px;}
+.navcon ul li a{text-align: center;padding: 0 25px;margin: 40px 0;color: #999;border-right: 1px solid #eee;float: left;font-size: 14px;}
+.nav ul li a span{display:block;}
+.nav ul li a:hover{background: #eee;text-decoration: none;}
+.nav ul .firstli a{color:#64a131;}
+.nav ul .firstli{border-bottom: 2px solid #64a131;height: 116px;overflow: hidden;float: left;}
+.nav ul .lastli a{border:0;}
+.nav .nav-right{margin-top: 40px;float: right;}
+.nav .nav-right .search{float: left;width: 180px;}
+.nav .nav-right .search input{border:none;float: left;width: 144px;border-bottom: 1px solid #999999;height: 20px;outline: none; }
+.nav .nav-right .search .searchbutton{float: left;background: #fff url(../img/search.jpg) no-repeat ;borde:none;width: 24px;height: 21px;}
+.nav .nav-right .search .hotsearch{float: left;color:#c2b0d3;margin-top:6px;}
+.nav .nav-right .search .hotsearch a{color:#c2b0d3;}
+.nav .nav-right .buycar{width: 37px;height: 40px;float: right;background:  url(../img/buycar.jpg);margin-right: 15px;}
+/****************************liucheng*************************/
+.liucheng {width: 1280px;margin: 0 auto;height: 66px;padding: 20px 0;border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;}
+.liucheng li{width: 319px;height: 60px;border-right: 1px solid #ddd;text-align: center;float: left;}
+.liucheng .list1{background: url(../img/icon.png) 40px 0 no-repeat}
+.liucheng .list2{background: url(../img/icon.png) 40px -60px no-repeat;}
+.liucheng .list3{background: url(../img/icon.png) 40px -120px no-repeat;}
+.liucheng .list4{background: url(../img/icon.png) 40px -180px no-repeat;}
+/****************************foot-link*************************/
+.foot-link {width: 1280px;margin: 0 auto;padding: 20px 0;margin-bottom: 15px;border-bottom: 1px solid #ddd;min-height: 160px;}
+.foot-link .block4{float: left;margin: 0 85px;width: 315px;height: 145px;text-align: center;}
+.foot-link .block4 .logo{background: url(../img/logo.jpg) no-repeat;width: 315px;height: 82px;}
+.foot-link .block4 .tel{margin: 8px 0 8px 80px;overflow: hidden;}
+.foot-link .block4 .servertime{font-size: 16px;color:#555;}
+.foot-link .block4 .servertime span{color:#999;}
+.foot-link .block2 li{float: left; width: 130px; text-align: center; margin-right: 45px;color: #999;}
+.foot-link .block2 li img{margin-bottom:10px;}
+.foot-link .block3 li{float: left;margin-left:30px; }
+.foot-link .block3 li a{display: block;line-height: 30px;color:#999;}
+.foot-link .block3 li a:hover{text-decoration: underline;color: #64a131;}
+.foot-link .block3 li h4{font-size:16px;font-weight: 500px;margin: 10px 0 20px;}
+/****************************foot-foot*************************/
+.foot-foot {text-align: center;color:#999;font-size: 14px;}
+.foot-foot .p2{color:#5fc00e;margin: 8px 0;}
+.foot-foot img{width: 47px;height: 47px;margin:0 25px 70px;}
+.foot-foot .p3{width: 200px;margin:0 auto;}
+/****************************fixfoot*************************/
+.toolbarfoot{position: fixed;bottom: 2px;right: 0;z-index: 9999;width: 35px;height: 109px;background: url("../img/kf.png") no-repeat;}
+.toolbarfoot a{display: block;width: 35px;height: 35px;margin-bottom: 1px;}
+/***************************pop*****************************/
+#buycar{display: none; position: fixed;top: 50%;left: 50%;z-index: 99999;width: 524px;height: 288px;padding: 6px;margin: 0 auto;margin: -144px 0 0 -262px;border: 8px;border-color: rgba(0,0,0,0.5);}
+#buycar .shop-content{background: #fff;box-sizing: border-box;overflow: hidden;padding-top: 28px;}
+#buycar .shop-top{height: 40px;padding-right: 17px;background-color: #eaeaea;}
+#buycar .shop-top img{float: right;margin-top: 8px;cursor: pointer;}
+#buycar .succese{width: 332px;margin:0 auto;text-indent:80px; font-size: 30px;font-family: "Hiragino Sans GB","Microsoft YaHei",sans-serif;color: #555;margin-bottom: 22px;position: relative;height: 66px;line-height: 66px;}
+#buycar .succese .succese-p{position: absolute;width: 59px;height: 66px;background:url(../img/icons.png) no-repeat -8px -247px;}
+#buycar .row2{font-size: 18px;color: #999;white-space: nowrap;padding-left: 4px;text-align: center;}
+.overlay{position:fixed;top:0;right:0;bottom:0;left:0;background-color:#000;display: none;z-index: 10000;opacity: 0;}
