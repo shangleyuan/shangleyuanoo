@@ -22,7 +22,7 @@
 .fruit-tui dl .biga{height:610px ;}
 .fruit-tui dl dd{color:#555;margin:3px 5px 6px;width: 248px;height: 48px;float: left;line-height: 24px;font-size: 14px;position: relative;}
 .fruit-tui dl dd .s-unit{color:#999;margin-right: 5px;}
-.fruit-tui dl dd .click-buycar{cursor: pointer;position: absolute;width: 34px;height: 34px;right: 0;top:7px;background:url(../img/ddbg.jpg) no-repeat;}
+.fruit-tui dl dd .click-buycar{cursor: pointer;position: absolute;width: 34px;height: 34px;right: 0;top:7px;background:url(../img/icons.png) no-repeat -517px -243px;}
 /****************************fruitad*************************/
 .fruitad {width: 1280px;margin: 0 auto;height: 120px;margin-bottom: 40px;}
 

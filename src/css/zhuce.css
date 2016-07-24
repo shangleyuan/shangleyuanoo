@@ -1,0 +1,34 @@
+.head .head-left i{padding-top:3px;float: left; }
+.head .head-left b{padding-top:1px; float: left; }
+.zhuce{width: 100%;}
+.zhucecon{margin: 0 auto;width: 1000px;padding-top:50px;font-size: 16px;color: #999999;margin-bottom: 80px; height: 500px}
+.zhucecon .menber{font-size:20px;padding-top: 15px;padding-bottom: 16px;border-bottom: 1px solid #ccc;margin-bottom: 36px;}
+.zhucecon .zhuce-left{width: 500px;height: 400px;position: relative;float: left;margin-right: 60px;}
+.zhucecon .zhuce-left button{font-size: 18px; position: absolute;bottom: 21px;left: 175px;cursor:pointer;border-radius: 4px;line-height: 48px;text-align: center; width: 153px;height: 48px;color: #64a131;background: #f5ffed;border: 1px solid #64a131;}
+.zhucecon form{float: left;}
+.zhucecon form input{float: left; color:#555;font-size: 14px;width: 276px;height: 28pxpx;padding: 6px 12px;}
+.zhucecon form .leftspan{float:left;line-height: 30px;width: 96px;height: 40px;text-align: right;margin-right: 36px;}
+.zhucecon form  p{height: 40px;margin-bottom: 26px;}
+#verify{width: 260px;}
+.zhucecon b{margin-top:5px; float: right;width: 20px;height: 20px;background:url(../img/icons.png) no-repeat -7px -325px;}
+#phoneverify{background:#eee;text-align: right;color:000;border: 1px solid gray}
+.zhucecon form button{font-size: 18px; cursor:pointer;border-radius: 4px;line-height: 38px;text-align: center; width: 143px;height: 38px;color: #64a131;background: #f5ffed;border: 1px solid #64a131;}
+.zhucecon form button.button1{background: #64a131;color:#fff;margin:0 10px 0 130px;}
+.zhucecon form button.button2{background: ##f5ffed;}
+
+/*******************************登陆*********************************/
+.zhucecon form .dengluspan{width: 18px;height: 18px;margin-left: 130px;margin-top:2px; }
+.zhucecon form .forgeta{float: right;text-decoration: underline;color: #999999}
+
+/*******************************good-content*********************************/
+.good-content{width: 1280px;padding-top: 50px;margin: 0 auto;height: 700px;}
+.good-content .p1{font-size:14px;margin-bottom: 20px;color:#999999;}
+.good-content .p1 a{color:#64a131;}
+.good-content .p2{width: 136px;float: left;}
+.good-content .p2 img{width: 136px;height: 136px;border: 1px solid orange;}
+.good-content .p3{position: relative;float: left;width: 570px;height: 570px; }
+.good-content .p3 img{position: absolute;width: 570px;height: 570px;}
+.good-content .p4{float: left;padding-left: 28px;padding-top: 20px;}
+.good-content .p4 h4{height: 40px;line-height: 40px;font-size:24px;}
+.good-content .p4 .p4-title{height: 48px;overflow: hidden;font-size: 16px;line-height: 48px;color: #999;}
+.good-content .p4 .guoranjia{height: 75px;padding-left: 10px;background: url(../img/icons.png) no-repeat 0 -48px;margin-bottom: 20px;}

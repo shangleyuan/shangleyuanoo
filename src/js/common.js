@@ -58,6 +58,7 @@
 				index=$(this).index();
 				show();
 			});
+			//移入图片时图片变大，鼠标移处恢复
 			$('.fruit-tui dl img').not('bigimg').hover(function(){
 				$(this).stop().animate({width:270,height:270,left:-11,top:-11});
 			},function(){
@@ -68,14 +69,18 @@
 			},function(){
 				$(this).stop().animate({width:248,height:610,left:0,top:0});
 			});
+			//点击购物车图标显示遮罩层和购物车,更换背景图
 			$('.fruit-tui dd').on('click','.click-buycar',function(){
-				$('#buycar').show();
+				$(this).animate({backgroundPositionX:-514,backgroundPositionY: -291})
+				$('#buycar').show(600);
 				$('.overlay').show().animate({opacity:0.5})
 			});
 			$('#buycar .shop-top img').on('click',function(){
-				$('#buycar').hide();
+				$('.fruit-tui dd .click-buycar').animate({backgroundPositionX:-517,backgroundPositionY: -243})
+				$('#buycar').hide(800);
 				$('.overlay').animate({opacity:0}).hide();
 			})
+
 
 			
 
