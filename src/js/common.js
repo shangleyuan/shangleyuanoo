@@ -79,6 +79,10 @@
 				$('.fruit-tui dd .click-buycar').animate({backgroundPositionX:-517,backgroundPositionY: -243})
 				$('#buycar').hide(800);
 				$('.overlay').animate({opacity:0}).hide();
+			});
+			$('.buynow').on('click',function(){
+				$('#buycar').show(600);
+				$('.overlay').show().animate({opacity:0.5})
 			})
 
 
