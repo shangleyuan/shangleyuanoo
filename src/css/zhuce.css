@@ -51,7 +51,7 @@
 
 /*******************************商品详情图*********************************/
 .longimg{width: 1280px;margin: 0 auto; }
-.longimg .longimg-p{width: 1000px;float: left;margin-bottom:50px;border-right:1px solid #ccc;border-bottom:1px solid #ccc; }
+.longimg .longimg-p{width: 1000px;float: left;margin-bottom:50px;border-right:1px solid #ccc;border-bottom:1px solid #ccc; position: relative;}
 .longimg .longimg-p img{float: left;width: 1000px;}
 .longimg .guke-say{width: 1000px;height: 38px;background:#f1f1f1 ; border-right:1px solid #ccc;border-top:1px solid #ccc;}
 .longimg .guke-say span{float: left;color: #555; padding: 0 36px;text-align: center;line-height: 38px;font-size: 16px;border-right:1px solid #ccc;cursor: pointer;}
@@ -67,7 +67,8 @@
 .longimg .longimg-text ul li{width: 260px;height: 91px;padding: 13px 0 8px 0;border-bottom: 1px solid #ccc;}
 .longimg .longimg-text ul .span-p p{float: left; width: 150px;height: 20px;line-height: 20px;color: #999999;}
 .longimg .longimg-p .in-img-hao {text-align: center; width: 1000px;padding-top: 46px;border-bottom: 1px solid #ccc;padding-bottom: 50px;height: 100px;}
-.longimg .longimg-p .in-img{font-size: 14px;color: #333;}
+.longimg .longimg-p .in-img{font-size: 14px;color: #333;margin-bottom: 50px;}
+.longimg .longimg-p .in-img.hide{display: none;}
 .longimg .longimg-p .in-img-hao b{color:#f6ab00;font-size:40px;display: block;margin-top:10px;}
 .longimg .longimg-p .in-img-hao span{float: left;height: 14px;line-height: 14px;}
 .longimg .longimg-p .in-img-hao li{float: left;padding: 20px 40px 0;border-right:1px solid #ccc ;height: 100px;}
@@ -76,3 +77,49 @@
 .longimg .longimg-p .in-img-hao .outdiv{float: left;width: 196px;height: 14px;border-radius: 10px;background-color: #dddddd;margin-left: 10px;margin-right: 10px;}
 .longimg .longimg-p .in-img-hao .innerdiv{width: 84%;background:#f6ab00;height: 14px;border-radius: 10px; }
 .longimg .longimg-p .in-img-hao .innerdiv.p8{width: 8%;}
+.longimg .longimg-p .list-checkbox{width: 972px;height: 38px;padding-left: 28px;color: #555555;line-height: 38px;border-bottom: 1px solid #ccc;background: #eee;}
+.longimg .longimg-p .list-checkbox span{margin-right: 20px;}
+.longimg .longimg-p .list-checkbox input{margin-right: 10px;margin-top: 3px;}
+.longimg .longimg-p .say-list img{width:88px; height:88px;margin-bottom: 20px;border-radius: 44px;}
+.longimg .longimg-p .say-list{width: 970px;padding: 15px 0 15px 30px;border-bottom: 1px solid #ccc;overflow: hidden;}
+.longimg .longimg-p .say-list .say-list-left{width: 88px;float: left;margin-right: 50px;}
+.longimg .longimg-p .say-list .say-list-right{float: left;}
+.longimg .longimg-p .say-list .say-list-right span{width: 50px;height: 20px; float: left;}
+.longimg .longimg-p .say-list .say-list-right p{margin:15px 0 15px 0;height: 20px;white-space: nowrap;}
+.longimg .longimg-p .say-list .say-list-right p.lastp{font-size:12px;padding-top:10px;  }
+.longimg .longimg-p .say-list .say-list-right i{display: inline-block;width: 16px;height: 15px;background: url(../img/icons.png) no-repeat -7px -167px;}
+/**********************************购物车页***********************/
+.shopcar{width: 1000px;margin: 0 auto;}
+.shopcar .cart-bar{padding-top: 50px;overflow: hidden;}
+.shopcar .cart-bar .mycart{padding-left: 22px;height: 25px;background: url(../img/icons.png) no-repeat -525px -330px;}
+.shopcar .cart-bar p{font-size: 20px;color: #555555;margin-left: 14px;line-height: 27px;float: left;}
+.shopcar .cart-bar a{font-size: 14px;color: #64a131;padding-top: 10px;float: right;}
+.shopcar .shop-box{width: 1000px;margin-top:14px;border:1px solid #ccc;font-size: 14px;margin-bottom: 20px;}
+.shopcar .shop-box .shop-box-t{border-bottom:1px solid #ccc;height: 50px;line-height: 50px;background: #f1f1f1;color: #999999;}
+.shopcar .shop-box .shop-box-t span{float: left;text-align: right;}
+.shopcar .shop-box .shop-box-t .span-1{width: 200px;}
+.shopcar .shop-box .shop-box-t .span-2{width: 274px;}
+.shopcar .shop-box .shop-box-t .span-3{width: 128px;}
+.shopcar .shop-box .shop-box-t .span-4{width: 90px;}
+.shopcar .shop-box .shop-box-t .span-5{width: 146px;}
+.shopcar .shop-box .shop-box-t .span-6{width: 118px;}
+.shopcar .shop-box img{float: left; width: 110px;height: 110px;margin-left: 50px;margin-right: 10px;}
+.shopcar .shop-box .shop-box-c{border-bottom:1px solid #ccc;height: 110px;color: #555555;padding-top:19px }
+.shopcar .shop-box .shop-box-c .a-1{color: #555555;float: left; display: block;height: 42px;overflow: hidden;text-overflow: ellipsis;width: 245px;}
+.shopcar .shop-box .shop-box-c span{float: left;width: 62px;text-align: right;}
+.shopcar .shop-box .shop-box-c b{color: #64a131;font-weight: bold;text-align: center; width:148px;float: left;padding-left: 20px}
+.shop-box .shop-box-c .p4-number{width: 93px;height: 28px;line-height: 28px;float: left; }
+.shop-box .shop-box-c .p4-number span{float: left;color:#fff;font-size: 12px;background:#64a131;width:71px;text-align: center;}
+.shop-box .shop-box-c .p4-number .choose-number{width: 28px;background: #eee;color: #a6a6a6;cursor: pointer;height: 22px;line-height: 22px;}
+.shop-box .shop-box-c .p4-number #choose-number{width: 35px;height: 22px;border:0;float: left;text-align: center; }
+.shop-box .shop-box-c .p4-number .in-span{width: 91px; overflow: hidden;height: 22px;border: 1px solid #dddddd;border-radius: 1px;}
+.shop-box .shop-box-c strong{width: 160px;text-align: center;color: #64a131;font-weight: bold;float: left;}
+.shop-box .shop-box-c .a-last{width: 90px;color: #000;text-align: center;float: left;}
+.shop-box .shop-box-e{height: 48px;background-color: #fff9eb;line-height: 48px;}
+.shop-box .shop-box-e span{width: 60px;height: 20px;line-height: 20px;text-align: center;color: #ffffff;background: #64a131;display: inline-block;border-radius: 3px;margin-left: 50px;margin-right: 10px;}
+.shop-box .shop-box-e a{color: #64a131}
+.shop-box .shop-box-e a:hover, a:focus {color: #23527c;text-decoration: underline;}
+.end-buy{margin-top: 24px;height: 50px;line-height: 50px;border: 1px solid #64a131;background: #f5ffed;margin-bottom: 10px;}
+.end-buy .end-buy-r{float: right;width: 470px;line-height: 50px;color:#999;}
+.end-buy .end-buy-r b,strong{color:#64a131 ;font-weight: blod;}
+.end-buy .end-buy-r strong{font-size: 22px;margin-top:16px; }

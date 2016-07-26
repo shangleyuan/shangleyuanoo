@@ -82,7 +82,14 @@
 			});
 			$('.buynow').on('click',function(){
 				$('#buycar').show(600);
-				$('.overlay').show().animate({opacity:0.5})
+				$('.overlay').show().animate({opacity:0.5});
+			});
+			//点击切换顾客评价和商品详情
+			$('.guke-say').on('click','span',function(){
+				var index=$(this).index();
+				$(this).addClass('spanclicked').siblings().removeClass('spanclicked')
+				$('.in-img').eq(index).removeClass('hide').siblings().addClass('hide')
+
 			})
 
 
