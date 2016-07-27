@@ -70,13 +70,13 @@
 				$(this).stop().animate({width:248,height:610,left:0,top:0});
 			});
 			//点击购物车图标显示遮罩层和购物车,更换背景图
-			$('.fruit-tui dd').on('click','.click-buycar',function(){
+			$(' dd ').on('click','.click-buycar',function(){
 				$(this).animate({backgroundPositionX:-514,backgroundPositionY: -291})
 				$('#buycar').show(600);
 				$('.overlay').show().animate({opacity:0.5})
 			});
 			$('#buycar .shop-top img').on('click',function(){
-				$('.fruit-tui dd .click-buycar').animate({backgroundPositionX:-517,backgroundPositionY: -243})
+				$(' dd .click-buycar').animate({backgroundPositionX:-517,backgroundPositionY: -243})
 				$('#buycar').hide(800);
 				$('.overlay').animate({opacity:0}).hide();
 			});
@@ -90,8 +90,87 @@
 				$(this).addClass('spanclicked').siblings().removeClass('spanclicked')
 				$('.in-img').eq(index).removeClass('hide').siblings().addClass('hide')
 
-			})
+			});
+			//切换最近浏览和推荐的商品
+			$('.look-history-menu li').on('click',function(){
+				var index=$(this).index();
+				$(this).addClass('pull-left').siblings().removeClass('pull-left');
+				$('.look-history-box ul').eq(index).show().siblings('ul').hide();
+			});
+			//点击+和—号，来选择商品数量
+			
+			$('.p4-number .choose-number').on('click',function(){
+				var num=parseInt($(this).siblings('input').val());
+				//var howmuch=parseInt($(this).closest('b').text());
+				var str=$(this).index('.choose-number');
+				//var total=num*howmuch;
+				if(num!=1 && str%2==0){
+					num--;
+				};
+				if(str%2==1){
+					num++;
+				}
+				
+				if(num==1&&str%2==0){console.log(123)
+					num=1;
+				};
+				$(this).siblings('input').val(num);
+				//$(this).closest('strong').html('￥'+total);
+				
+				
+			});
+			//删除购物车中所选商品
+			$('.shop-box-c .a-last').on('click',function(e){
 
+				e.preventDefault;
+				$(this).parent().remove();
+			})
+			//商品详情页轮播图
+			var indexG=0;
+			var timerg=setInterval(function(){
+				showg();
+				indexG++
+			},2000)
+			function showg(){
+				if(indexG==3){
+					indexG=0;
+				};
+				$('.good-content .p2 img').css({opacity:1});
+				$('.good-content .p2 img').eq(indexG).css({border:'1px solid orange',opacity:0.5});
+				$('.good-content .p3 img').hide();
+				$('.good-content .p3 img').eq(2-indexG).show();
+			};
+			$('.good-content .p3,P2 img').hover(function(){
+				clearInterval(timerg);
+			},function(){
+				timerg=setInterval(function(){
+				showg();
+				indexG++
+				},2000)
+			});
+			/*$('.good-content .P2 img').hover(function(){console.log(123)
+				clearInterval(timerg);
+				var index=$(this).index();
+				indexG=index;
+				showg();
+			},function(){
+				timerg=setInterval(function(){
+				showg();
+				indexG++
+				},2000)
+			});*/
+			//顾客评价栏固定
+			var fromtop=$('.longimg .guke-say').offset().top;
+			$(window).on('scroll',function(){
+				
+				var scrollTop=$(window).scrollTop();console.log(scrollTop)
+				if(scrollTop>=fromtop){
+					$('.longimg .guke-say').css({position:'fixed',top:0})
+				}else{
+					$('.longimg .guke-say').removeAttr('style');
+				}
+			})
+			
 
 			
 

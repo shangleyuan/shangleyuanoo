@@ -9,8 +9,8 @@ img{border:0;}
 .head{width:100%;background:#eeeeee;}
 .headcon{width:1280px ;margin: 0 auto; color: #999;height:30px ;position: relative;}
 .head .head-left{padding-left:10px;height:30px ;float: left;text-align: center;line-height: 30px;}
-.head .head-left i{padding-top:10px;float: left; }
-.head .head-left b{padding-top:12px; float: left; }
+.head .head-left i{float: left;width: 15px;height: 12px;margin-top:9px; }
+.head .head-left b{float: left; width: 12px;height:7px;margin-top:11px; }
 .head .head-left #address{margin:0 7px 0 3px;float: left;}
 .head .head-left:hover{background: #fff}
 .head h4{float: right;line-height: 30px;font-weight: 800;background: url(../img/kefu.jpg) no-repeat left center;padding-left: 16px;}
