@@ -13,6 +13,7 @@
 
 	<script src="../assets/jquery-1.12.0.js"></script>
 	<script src="../js/common.js"></script>
+    <script src="../js/denglu.js"></script>
 
 	<script>
 
@@ -296,17 +297,23 @@
             </div>
             <form>
                 <p><label><span class="leftspan">手机号</span><input type="text" name="" id='username'></label>
+                    <span class="rightspan"></span>
                 </p>
                 <p><label><span class="leftspan">密码</span><input placeholder="请输入6-20位号码字符" id="passwd" type="password"></label>
+                    <span class="rightspan"></span>
                 </p>
-                <p><label><span class="leftspan">确认密码</span><input placeholder="请输入6-20位号码字符" id="apasswd" type="password"></label>
+                <p><label><span class="leftspan">确认密码</span><input placeholder="请输入6-20位号码字符" id="apasswd" type="password"></label><span class="rightspan"></span>
                 </p>
                 <p><label><span class="leftspan">验证码</span><input  id="verify" type="text"></label>
-                <b></b>
+                    <span id='yanzhengma'></span>
+                    <b></b>
+                    <span class="rightspan"></span>
                 </p>
                 <p><label><span class="leftspan">手机验证码</span><input  id="phoneverify" type="text" value="输入手机验证码"></label>
+                    <span class="rightspan"></span>
                 </p>
-                <p><button class="button1">注册</button><button class="button2">会员登陆></button></p>
+                <p><button class="button1" type="button">注册</button><button class="button2" type="button">会员登陆</button>
+                </p>
             </form>
         </div>
     </div>

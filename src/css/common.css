@@ -22,9 +22,10 @@ img{border:0;}
 .head .headnav .hideli .shoujihide{display:none;text-align: center;position: absolute;top: 30px;right: 0;width: 290px;height: 290px;padding: 10px 15px;background: #fff;box-shadow: 0 10px 15px rgba(175,175,175,0.75);z-index: 10;}
 .head .headnav .hideli .shoujihide dl{margin:15px 0;padding-bottom: 15px;border-bottom: 1px solid #ddd;overflow: hidden;}
 .head .headnav .hideli .shoujihide dt img{width: 100px;height: 100px;}
+
 .head .headnav .hideli .shoujihide dd{float: right;width: 145px;}
 .head .headnav .hideli .shoujihide dd img{margin:5px 0;}
-.head .headnav .hideli .shoujihide dt{float: left;}
+.head .headnav .hideli .shoujihide dt{float: left;width:100px;height:100px;}
 .head .headnav li {float: left;background: url(../img/libg.jpg) right center no-repeat;padding: 0 13px;line-height: 30px; }
 .head .headnav li a{color: #999;}
 .head .headnav li a:hover{text-decoration:underline;color: orange;}
